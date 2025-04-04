@@ -1,0 +1,11 @@
+C:\Projetos\Agendador\bin\Debug\Agendador.exe.config
+C:\Projetos\Agendador\bin\Debug\Agendador.exe
+C:\Projetos\Agendador\bin\Debug\Agendador.pdb
+C:\Projetos\Agendador\obj\Debug\Agendador.csproj.AssemblyReference.cache
+C:\Projetos\Agendador\obj\Debug\Agendador.csproj.CoreCompileInputs.cache
+C:\Projetos\Agendador\obj\Debug\Agendador.exe
+C:\Projetos\Agendador\obj\Debug\Agendador.pdb
+C:\Projetos\Agendador\bin\Debug\Agendador.exe.manifest
+C:\Projetos\Agendador\bin\Debug\Agendador.application
+C:\Projetos\Agendador\obj\Debug\Agendador.exe.manifest
+C:\Projetos\Agendador\obj\Debug\Agendador.application
