@@ -1,0 +1,6 @@
+﻿################################################################################
+# Este arquivo .gitignore foi criado automaticamente pelo Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs/Agendador/FileContentIndex/1bf75f5a-709f-49e0-b555-f1ddc097300b.vsidx
+/obj/Debug/DesignTimeResolveAssemblyReferences.cache
