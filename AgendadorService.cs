@@ -14,10 +14,8 @@ namespace Agendador
         public AgendadorService()
         {
             ServiceName = "AgendadorService";
-            // Removemos a configuração do EventLog, pois não precisamos de logs.
         }
 
-        // Métodos auxiliares para testes (modo console)
         public void StartService(string[] args)
         {
             this.OnStart(args);
@@ -28,20 +26,15 @@ namespace Agendador
             this.OnStop();
         }
 
-        // Caminho do arquivo INI (na mesma pasta do executável)
         private string iniFilePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "config.ini");
-        // Lista de tarefas configuradas
         private List<TaskInfo> tasks = new List<TaskInfo>();
-        // Timer para verificação
         private TimersTimer timer;
 
-        // Importa a função da API para ler o arquivo INI
         [DllImport("kernel32.dll", CharSet = CharSet.Auto)]
         private static extern int GetPrivateProfileString(
             string section, string key, string defaultValue,
             System.Text.StringBuilder retVal, int size, string filePath);
 
-        // Classe para armazenar as informações de cada tarefa
         public class TaskInfo
         {
             public string FileToOpen { get; set; }
@@ -54,9 +47,6 @@ namespace Agendador
         protected override void OnStart(string[] args)
         {
             InitializeTasks();
-
-            // Se nenhuma tarefa for configurada corretamente, não é feito log.
-            // Caso queira, você pode usar Console.WriteLine() em modo interativo.
 
             timer = new TimersTimer(1000);
             timer.Elapsed += Timer_Elapsed;
